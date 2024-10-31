@@ -54,7 +54,7 @@ function stopWatch (){
 }
 startStopBtn.addEventListener("click",function(){
     if(timerStatus === "stopped"){
-        timerInterval = window.setInterval(stopWatch,1);
+        timerInterval = window.setInterval(stopWatch,1000);
         document.getElementById("startStopBtn").innerHTML =
          `<i class="fa-solid fa-pause" id="pause"></i>`;
          timerStatus = "started"
